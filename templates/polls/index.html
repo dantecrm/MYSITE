@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block titulo %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>{% block encabezado %}{% endblock %}</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</h1></li>
+    </header>
+    <section>
+        {% if latest_poll_list %}
+        <ul>
+            {% for poll in latest_poll_list %}
+            <li><a href="/polls/{{ poll.id }}/">{{ poll.question }}</a></li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p>No polls are available.</p>
+        {% endif %}
+    </section>
+    <footer>
+    </footer>
+</body>
+</html>
