@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block titulo %} {% endblock %}</title>
+        <link href="{{STATIC_URL}}css/bootstrap.css" rel = "stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="well">
+                <h1>{% block encabezado %}{% endblock %}</h1>
+                <header>
+                    {% block menu %}{% endblock menu %}
+                </header>
+                <section>
+                    {% block contenido %}{% endblock %}
+                </section>
+                <footer>
+                    <script type="text/javascript" src="{{STATIC_URL}}js/bootstrap.js">
+                    </script>
+                    <p>Proyecto de Encuesta Sistemas Copyleft</p>
+                </footer>
+    </body>
+</html>
+            

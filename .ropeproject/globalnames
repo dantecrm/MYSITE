@@ -1,6 +1,6 @@
 €}q(Umysite.urls]qUurlpatternsqaUmysite.settings]q(UTEMPLATE_DIRSqUUSE_L10NqULANGUAGE_CODEqUUSE_TZqUUSE_I18Nq	U	DATABASESq
 U	TIME_ZONEqU
 STATIC_URLqUROOT_URLCONFqUTEMPLATE_DEBUGqUWSGI_APPLICATIONqUMIDDLEWARE_CLASSESqUDEBUGqUALLOWED_HOSTSqU
-SECRET_KEYqUINSTALLED_APPSqUBASE_DIRqeUpolls.admin]q(UChoiceInlineqU	PollAdminqeU
-polls.urls]qUurlpatternsqaUpolls.views]q(UResultsViewqUindexqUresultsqUdetailqU	IndexViewq Uvoteq!U
-DetailViewq"eUpolls.models]q#(UPollq$UChoiceq%eu.
+SECRET_KEYqUINSTALLED_APPSqUSTATICFILES_DIRSqUBASE_DIRqeUpolls.admin]q(UChoiceInlineqU	PollAdminqeU
+polls.urls]qUurlpatternsqaUpolls.views]q(UResultsViewqUindexqUinicioqUresultsq Udetailq!U	IndexViewq"Uvoteq#U
+DetailViewq$eUpolls.models]q%(UPollq&UChoiceq'eu.

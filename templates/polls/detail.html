@@ -1,3 +1,7 @@
+{% extends "base.html" %}
+{% block titulo %}Question{% endblock %}
+{% block contenido %}
+
 <h1>{{ poll.question }}</h1>
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
@@ -8,5 +12,11 @@
     <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
     <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br />
 {% endfor %}
-<input type="submit" value="Vote" />
+<button type="submit/button" class="btn btn-info">
+    <span class="glyphicon glyphicon-saved"></span>Vote
+</button>
+<br>
 </form>
+<a href="/question" class= "btn btn-warning"><span class="glyphicon
+            glyphicon-circle-arrow-left"></span> Return</a>            
+{% endblock contenido %}

@@ -1,3 +1,4 @@
+# coding: utf-8
 from django.shortcuts import render, get_object_or_404
 from django.db import models
 from django.http import HttpResponse, Http404, HttpResponseRedirect
@@ -7,6 +8,10 @@ from polls.models import Choice, Poll
 from django.template import RequestContext, loader
 
 # Create your views here.
+
+def inicio(request):
+    titulo = "Menú de Preguntas"
+    return render(request, 'polls/menu.html', {'titulo':titulo})
 
 def index(request):
     latest_poll_list = Poll.objects.order_by('-pub_date')[:5]

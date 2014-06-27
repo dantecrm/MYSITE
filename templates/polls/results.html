@@ -1,3 +1,6 @@
+{% extends "base.html" %}
+{% block titulo %}Votos{% endblock %}
+{% block contenido %}
 <h1>{{ poll.question }}</h1>
 
 <ul>
@@ -5,5 +8,8 @@
     <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
 {% endfor %}
 </ul>
-
 <a href="{% url 'polls:detail' poll.id %}">Vote again?</a>
+
+<a href="/question" class= "btn btn-warning btn-lg"><span class="glyphicon glyphicon-circle-arrow-left"></span> Return</a>       
+
+{% endblock contenido %}
